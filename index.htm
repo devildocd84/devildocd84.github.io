@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--Home Page for Davis Bicycle Shop-->
+<html lang="en-US">
+<head>
+        <!-- 
+*****************************************************************************
+Title: Davis Bicycle Shop
+Use: To promote Davis Bicycle shop
+Author: Brian Davis
+School/Term: Southern Illinois University Carbondale, Spring 2022
+Developed: Jan 20, 2022
+Tested: Jan 23, 2022; Passed on Firefox, Chrome, and safari browsers.
+******************************************************************************
+-->
+        <meta charset="utf-8">
+        <title>Davis Bicycle Shop</title>
+        <meta name="description"  content="We're Davis Bicycle shop, an experienced, best-in-class Bicycle shop.">
+        <meta name="keywords" content="Davis bicycle shop, Davis bicycles, family bicycles, kids bicycles, adult bicycles, family bikes, adult bikes, kids bikes">
+        <meta name="Author" content="Davis">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function() {
+                $('#nav_menu') .slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <style>
+            body {
+                background-image: url(images/Fam.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 200px;
+            }
+        </style>
+</head>
+
+<!--ind abbreviation represent page i.e. ind=index, con=contact sal=sales followed by object name. No abbrevation is universal-->
+<!--Index body page-->
+<body class="ind_body">
+    <nav id="mobile_menu"></nav>
+    <div class="body">
+    <!--page title Company name-->
+    <h1 class="ind_title">Davis Bicycle Shop</h1>
+    <!--Contact Info-->
+    <div id="ind_div_contact">
+        <!--Location-->
+        <h2 class="ind_address">8100 Trail Blazer Rd<br>Alton IL, 62002</h2>
+        <!--Hours of Ops-->
+        <h3 class="ind_hours">Open Daily: 9:00am - 7:00pm</h3>
+    </div>
+    <!--main image-->
+        <!--Main Navigation menu-->
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.htm" class="current">Home</a></li>
+                <li><a href="rentals.htm">Rentals</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="contact.htm" class="lastime">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!--Company introduction-->
+        <p class="ind_welcome"><strong>WELCOME!</strong></p>
+        <!--Page Music-->
+        <div id="ind_audio">
+            <audio controls autoplay loop>
+                <source src="media/badness.mp3"> 
+            </audio>
+            </div>
+        <!--Intro about Us-->
+        <hr class="ind_hr">
+        <p class="ind_desc">We are a family owned and community operated bicycle shop. Represting the best in bicycling for the community.
+        No matter if your looking for your first bicycle or you're a professional rider we have the right bike for you. Our goal is to make
+        sure you have the bicycle that fits your riding needs and comfort. <br><br> Davis Bicycle Shop was established in 2021. We have decades 
+        of expierence in ensuring that your bicycle is the right match to fit you. 
+        Our employees are experts in City cycles, Hybrid cycles, Off-road cycles, and more.</p>
+        <!--unordered list of offered brands with image-->
+        <div id="ind_div_bikes">
+            <div id="ind_div_bikeslist">
+            <p class="ind_ul">We offer the expertise on number types of cycles and brands including:</p>
+            <ul>
+                <li>
+                    <strong>Trek Bikes</strong>
+                </li>
+                <li>
+                    <strong>Giant Bicycle</strong>
+                </li>
+                <li>
+                    <strong>Redline</strong>
+                </li>
+                <li>
+                    <strong>Deomin</strong>
+                </li>
+                <li>
+                    <strong>Alpha Racer</strong>
+                </li>
+                
+            </ul>
+            </div>
+        <!--Images with rollover -->
+            <figure class="ind_img_figure">
+                <img class="ind_img_kids" src="images/kids.jpg" alt="kids with bikes" onmouseover="this.src='images/family1.jpg'" onmouseout="this.src='images/kids.jpg'">
+                <figcaption class="ind_kids_Figcap">2022 Family Bike-a-thon</figcaption>
+            </figure>
+        </div>
+        <!--siu partner link-->    
+        <p class="ind_siu">We proudly partner and provide discounts for local schools like 
+            <a href="https://www.siu.edu"  target="_blank">SIU!</a>
+        </p>
+    </div>
+</body>
