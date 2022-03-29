@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- 
+*****************************************************************************
+Title: Davis Bicycle Shop
+Use: To promote Davis Bicycle shop
+Author: Brian Davis
+School/Term: Southern Illinois University Carbondale, Spring 2022
+Developed: Jan 20, 2022
+Tested: Jan 23, 2022; Passed on Firefox, Chrome, and safari browsers.
+******************************************************************************
+-->
+        <meta charset="utf-8">
+        <title>Davis Bicycle Shop</title>
+        <meta name="description"  content="We're Davis Bicycle shop, an experienced, best-in-class Bicycle shop.">
+        <meta name="keywords" content="Davis bicycle shop, Davis bicycles, family bicycles, kids bicycles, adult bicycles, family bikes, adult bikes, kids bikes">
+        <meta name="Author" content="Davis">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function() {
+                $('#resp_nav_menu') .slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <style>
+            body {
+                background-image: url(images/Fam.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 200px;
+            }
+        </style>
+</head>
+<body>
+    <nav id="mobile_menu"></nav>
+    <div class="body">
+            <!--page title Company name-->
+            <h1 class="sal_title">Davis Bicycle Shop</h1>
+            <!--Contact Info-->
+            <div id="sal_div_contact">
+                <!--Location-->
+                <h2 class="sal_address">8100 Trail Blazer Rd<br>Alton IL, 62002</h2>
+                <!--Hours of Ops-->
+                <h3 class="sal_hours">Open Daily: 9:00am - 7:00pm</h3>
+            </div>
+    <div class="body">
+    <nav id="resp_nav_menu">
+            <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="rentals.htm">Rentals</a></li>
+                    <li><a href="sales.htm">Sales</a></li>
+                    <li><a href="services.htm" class="current">Services</a></li>
+                    <li><a href="contact.htm" class="lastitem">Contact</a></li>
+            </ul>
+    </nav>
+
+<p class="resp_ty">Thank You!<br> Your request has been submitted.</p>
+</body>
+</html>
+                                

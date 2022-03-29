@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+        <!-- 
+*****************************************************************************
+Title: Davis Bicycle Shop
+Use: To promote Davis Bicycle shop
+Author: Brian Davis
+School/Term: Southern Illinois University, Spring 2022
+Developed: Feb 13, 2022
+Tested: Feb 13, 2022; Passed on Firefox, Chrome, and safari browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Davis Bicycle Shop</title>
+        <meta name="description"  content="We're Davis Bicycle shop, an experienced, best-in-class Bicycle shop.">
+        <meta name="keywords" content="Davis bicycle shop, Davis bicycles, family bicycles, kids bicycles, adult bicycles, family bikes, adult bikes, kids bikes">
+        <meta name="Author" content="Davis">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function() {
+                $('#ser_nav_menu') .slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <style>
+            body {
+                background-image: url(images/Fam.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 200px;
+                background-color: grey;
+            }
+        </style>
+</head>
+<body>
+        <nav id="mobile_menu"></nav>
+        <div class="body">
+                <!--page title Company name-->
+                <h1 class="sal_title">Davis Bicycle Shop</h1>
+                <!--Contact Info-->
+                <div id="sal_div_contact">
+                    <!--Location-->
+                    <h2 class="sal_address">8100 Trail Blazer Rd<br>Alton IL, 62002</h2>
+                    <!--Hours of Ops-->
+                    <h3 class="sal_hours">Open Daily: 9:00am - 7:00pm</h3>
+                </div>
+        <div class="body">
+        <nav id="ser_nav_menu">
+                <ul>
+                        <li><a href="index.htm">Home</a></li>
+                        <li><a href="rentals.htm">Rentals</a></li>
+                        <li><a href="sales.htm">Sales</a></li>
+                        <li><a href="services.htm" class="current">Services</a></li>
+                        <li><a href="contact.htm" class="lastitem">Contact</a></li>
+                </ul>
+        </nav>
+</div>
+<div id="ser_welcome">
+        <p class="ser_services"><strong>BICYCLE SERVICE CENTER</strong></p>
+        <hr class="ind_hr">
+        <p class="ser_intro">Davis Bicycle Shop offers quality maintenance services for bicycles at affordable prices. 
+                <br> Warranty work is provided at no cost. We also service all makes and models.
+                <br> A list of prices are below. You can also call or come by for a free estimate. 
+        </p>
+</div>
+<div>
+        <figure class="table">
+                <figcaption class="ser_figcap">Bicycle Service Price list</figcaption>
+                <table class="ser_table">
+                        <thead class="ser_head">
+                                <tr>
+                                        <th colspan="2">Maintenance</th>
+                                </tr>
+                                <tr>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                </tr>
+                        </thead>
+                        <tbody class="ser_body">
+                                <tr>
+                                        <td>Safety Checks</td>
+                                        <td>$49.00</td>
+                                </tr>
+                                <tr>
+                                        <td>Brake Adjustments front or back</td>
+                                        <td>$15.00 - $30.00</td>
+                                </tr>
+                                <tr>
+                                        <td>Clean up and Lube</td>
+                                        <td>$30.00 - $40.00</td>
+                                </tr>
+                               
+                                <tr>
+                                        <td>Seat and Handlebar Adjustments</td>
+                                        <td>$12.00</td>
+                                </tr>
+                                <tr>
+                                        <td>Calibrate Gears</td>
+                                        <td>$40.00 - $60.00</td>
+                                </tr>
+                                <tr>
+                                        <td>Adjust Wheel Hubs</td>
+                                        <td>$20.00 - $40.00</td>
+                                </tr>
+                        </tbody>
+                        <thead class="ser_head">
+                                <tr>
+                                        <th colspan="2">Repairs</th>
+                                </tr>
+                        </thead>
+                        <tbody class="ser_body">
+                                <tr>
+                                        <td>Cable Replacement</td>
+                                        <td>$30.00 - $50.00</td>
+                                </tr>
+                                <tr>
+                                        <td>Parts Replacement</td>
+                                        <td>$65.00 an hour</td>
+                                </tr>
+                                <tr>
+                                        <td>Repair Bike Chain</td>
+                                        <td>$35.00</td>
+                                </tr>
+                                 <tr>
+                                        <td>Tire Repair</td>
+                                        <td>$10.00 - $20.00</td>
+                                </tr>
+                                <tr>
+                                        <td>Other Miscellaneous Repairs</td>
+                                        <td>$65.00 an hour</td>
+                                </tr>
+                        </tbody>
+                </table>
+        </figure>
+</div>
+</body>
+</html>

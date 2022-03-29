@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+        <!-- 
+*****************************************************************************
+Title: Davis Bicycle Shop
+Use: To promote Davis Bicycle shop
+Author: Brian Davis
+School/Term: Southern Illinois University, Spring 2022
+Developed: Feb 13, 2022
+Tested: Feb 13, 2022; Passed on Firefox, Chrome, and safari browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+        <head>
+                <!-- 
+        *****************************************************************************
+        Title: Davis Bicycle Shop
+        Use: To promote Davis Bicycle shop
+        Author: Brian Davis
+        School/Term: Southern Illinois University Carbondale, Spring 2022
+        Developed: Jan 20, 2022
+        Tested: Jan 23, 2022; Passed on Firefox, Chrome, and safari browsers.
+        ******************************************************************************
+        -->
+                <meta charset="utf-8">
+                <title>Davis Bicycle Shop</title>
+                <meta name="description"  content="We're Davis Bicycle shop, an experienced, best-in-class Bicycle shop.">
+                <meta name="keywords" content="Davis bicycle shop, Davis bicycles, family bicycles, kids bicycles, adult bicycles, family bikes, adult bikes, kids bikes">
+                <meta name="Author" content="Davis">
+                <link rel="stylesheet" href="styles/normalize.css">
+                <link rel="stylesheet" href="styles/slicknav.css">
+                <link rel="stylesheet" href="styles/main.css">
+                <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+                <link rel="manifest" href="site.webmanifest">
+                <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+                <script src="js/jquery.slicknav.min.js"></script>
+                <script type="text/javascript">
+                    $(document) .ready(function() {
+                        $('#nav_menu') .slicknav({prependTo:"#mobile_menu"});
+                    });
+                </script>
+                <style>
+                    body {
+                        background-image: url(images/Fam.jpg);
+                        background-repeat: no-repeat;
+                        background-size: 100% 200px;
+                    }
+                </style>
+        </head>
+        
+        <!--ind abbreviation represent page i.e. ind=index, con=contact sal=sales followed by object name. No abbrevation is universal-->
+        <!--Index body page-->
+        <body class="con_body">
+            <nav id="mobile_menu"></nav>
+            <div class="body">
+            <!--page title Company name-->
+            <h1 class="con_title">Davis Bicycle Shop</h1>
+            <!--Contact Info-->
+            <div id="con_div_contact">
+                <!--Location-->
+                <h2 class="con_address">8100 Trail Blazer Rd<br>Alton IL, 62002</h2>
+                <!--Hours of Ops-->
+                <h3 class="con_hours">Open Daily: 9:00am - 7:00pm</h3>
+            </div>
+            <!--main image-->
+                <!--Main Navigation menu-->
+                <nav id="nav_menu">
+                    <ul>
+                        <li><a href="index.htm" >Home</a></li>
+                        <li><a href="rentals.htm">Rentals</a></li>
+                        <li><a href="sales.htm">Sales</a></li>
+                        <li><a href="services.htm">Services</a></li>
+                        <li><a href="contact.htm" class="lastime, current">Contact Us</a></li>
+                    </ul>
+        </nav>
+</div>
+<div id="con_welcome">
+        <p class="con_req"><strong>BICYCLE SERVICE CENTER</strong></p>
+        <hr class="con_hr">
+        <p class="con_intro">Davis Bicycle Shop is here for your needs. 
+                <br> Please contact us with any questions or requests you have.
+                <br> All fields are required.
+        </p>
+</div>
+<div id="con_form">
+        <form id="contact_form" method="POST" action="response.htm" >
+                <label for="fullname">Full name:</label>
+                <input type="text" id="fullname" autofocus minlength="15" maxlength="25" 
+                placeholder="First and Last Name" required><br><br>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" minlength="15" maxlength="50" placeholder="Street Address" required>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" minlength="4" maxlength="25" placeholder="City" required><br>
+
+                <label for="state">State:</label>
+                        <select name="state" id="state" required>
+                        <optgroup label="Select Your State">
+                                <option value="" disabled selected hidden>Choose your State</option>
+                                <option value="Illinois">Illinois</option>
+                                <option value="Indiana">Indiana</option>
+                                <option value="Kansas">Kansaa</option>
+                                <option value="Kentucky">Kentucky</option>
+                                <option value="Missouri">Missouri</option>
+                                <option value="Wisconsin">Wisconsin</option>
+                                
+                        </optgroup>
+                        </select>
+
+                <label for="zip">Zip code:</label>
+                <input id="zip" name="zip" type="text" inputmode="numeric" placeholder="99999"
+                pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" minlength="5" maxlength="10" required><br>
+
+                <label for="phone">Phone number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="999-999-9999" minlength="10" maxlength="12" required>
+
+                <label for="email">Email address:</label>
+                <input type="email" name="email" id="email" minlength="10" maxlength="25" placeholder="email@example.com" required><br>
+
+                <label for="date">Submission date:</label>
+                <input type="date" name="date" id="date" required><br>
+
+                <fieldset class="con_inq_type">
+                        <legend>Inquiry Type</legend>
+
+                        <input type="checkbox" name="inqtype" id="sales" value="sales">
+                        <label for="sales">Sales</label>
+
+                        <input type="checkbox" name="inqtype" id="service" value="service">
+                        <label for="service">Service</label>
+
+                        <input type="checkbox" name="inqtype" id="rental" value="rental">
+                        <label for="rental">Rental</label>
+                
+                </fieldset>
+
+                <fieldset class="con_bik_type">
+                        <legend>Bicycle Type</legend>
+
+                        <input type="radio" name="biketype" id="citybike" value="citybike" required>
+                        <label for="citybike">City Bicycle</label>
+
+                        <input type="radio" name="biketype" id="roadbike" value="roadbike">
+                        <label for="roadbike">Road Bicycle</label>
+
+                        <input type="radio" name="biketype" id="mountbike" value="mountbike">
+                        <label for="mountbike">Moutain Bicycle</label>
+
+                        <input type="radio" name="biketype" id="tandembike" value="tandembike">
+                        <label for="tandembike">Tandem Bicycle</label>
+
+                </fieldset>
+
+                <label class="password" for="password">Password:</label>
+                <input class="password" type="password" name="password" id="password" required
+                placeholder="At least 6 letters or numbers"
+                pattern="[a-zA-Z0-9]{6,}"
+                title="Must be at least 6 alphanumeric characters">
+                <label class="password" for="verify">Verify Password:</label>
+                <input class="password" type="password" name="verify" id="verify" required
+                placeholder="At least 6 letters or numbers"><br>
+
+                Comments:<br>
+                <textarea class="con_messgae" name="comments" required minlength="20" maxlength="200">Enter your Message</textarea>
+                <br>
+                <input type="submit" id="button" value="Submit"> <input type="reset" id="reset">
+        </form>
+</div>
+</body>
+</html>

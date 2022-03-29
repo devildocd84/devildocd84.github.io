@@ -1,0 +1,825 @@
+/* external stlesheet for the Davis Bicycle shop site */
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
+/*side padding for entire page */
+.ind_body {  
+    max-width: 1440px;  
+    font-family: 'Poppins', sans-serif;
+    background-color: #A9A9A9;        
+    
+}
+
+#sal_body {  
+    max-width: 1440px;  
+    font-family: 'Poppins', sans-serif;
+    background-color: #A9A9A9;        
+    
+}
+
+/* body padding */
+.body {
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* title - company name alignment */
+.ind_title, .con_title {
+    font-family: 'Monoton', cursive;
+    font-weight: lighter;
+    text-align: center;
+    color: blue;
+}
+
+/* container for address and hours */
+#ind_div_contact, #con_div_contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* company address alignment */
+.ind_address, .con_address {
+    display: inline-block;
+    text-align: left;
+}
+
+/* Company hours alignment */
+.ind_hours, .con_hours {
+    margin-top: 1rem;
+    padding: 0;
+    color: blue;
+    text-decoration: underline;
+    text-align: right;
+}
+
+/*side padding for sales page */
+.sal_body {  
+    max-width: 1440px;  
+    font-family: 'Poppins', sans-serif;
+    background-color: #A9A9A9;        
+    
+}
+
+/* title - company name alignment sales page */
+.sal_title {
+    font-family: 'Monoton', cursive;
+    font-weight: lighter;
+    text-align: center;
+    color: blue;
+}
+
+/* container for address and hours sales page */
+#sal_div_contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* company address alignment sales page*/
+.sal_address{
+    display: inline-block;
+    text-align: left;
+}
+
+/* Company hours alignment sales page */
+.sal_hours {
+    margin-top: 1rem;
+    padding: 0;
+    color: blue;
+    text-decoration: underline;
+    text-align: right;
+}
+
+
+/* mobile menu in desktop mode */
+#mobile_menu {
+    display: none;
+}
+
+/* Index page navigation ul */
+#nav_menu ul {  
+    list-style-type: none;
+    height: 75px;
+    width: 850px;
+    margin-top: 130px;
+    margin-left: calc((100% - 850px) /2);
+    align-self: center;
+}
+
+#nav_menu {
+    margin-top: -100px;
+}
+
+
+/* Index page navigation ul */
+#sal_nav_menu ul {  
+    list-style-type: none;
+    height: 75px;
+    width: 850px;
+    margin-top: 130px;
+    margin-left: calc((100% - 850px) /2);
+    align-self: center;
+}
+
+/*Index page Navigation menu list */
+#nav_menu li {    
+    float: left;
+}
+
+/* Index page Navigation menu list */
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 150px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: steelblue;
+    color: whitesmoke;
+    font-weight: bold;
+    border-right: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+}
+
+
+#nav_menu ul li a.current {
+    color: orange;
+    text-decoration: underline;
+}
+
+
+/* Sales nav menu */
+#sal_nav_menu{
+    margin-top: -100px;
+}
+
+/*Sales page Navigation menu list */
+#sal_nav_menu li {    
+    float: left;
+}
+
+/* Sales page Navigation menu list */
+#sal_nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 150px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: steelblue;
+    color: whitesmoke;
+    font-weight: bold;
+    border-right: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+}
+
+
+#sal_nav_menu ul li a.current {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* Index page navigation ul */
+#ren_nav_menu ul {  
+    list-style-type: none;
+    height: 75px;
+    width: 850px;
+    margin-top: 5px;
+    margin-left: calc((100% - 850px) /2);
+    align-self: center;
+}
+
+/*Index page Navigation menu list */
+#ren_nav_menu li {    
+    float: left;
+}
+
+/* Index page Navigation menu list */
+#ren_nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 150px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: steelblue;
+    color: whitesmoke;
+    font-weight: bold;
+    border-right: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+}
+
+
+#ren_nav_menu ul li a.current {
+    color: orange;
+    text-decoration: underline;
+}
+
+.ind_welcome {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+#ind_audio {
+    display: flex;
+    justify-content: center;
+}
+
+.ind_hr {
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+.ind_desc {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+#ind_div_bikes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ind_ul {
+    text-justify: auto;
+}
+
+.ind_img_kids {
+    
+    width: 450px;
+    height: 200px;
+    float: right;
+    border-radius: 15px;
+    border: 5px solid blue;
+}
+
+.ind_kids_Figcap {
+
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+
+.rental_body {
+    background-color: #A9A9A9;
+}
+
+.rental_h1 {font-style: italic; color: black;
+}
+
+/* rental page main section */
+.rental_main {width: 60%;
+    height: 500px;
+    float: left;
+    padding-right: 40px;
+}
+
+.rental_terms {font-size: medium;
+float: left}
+
+.ren_bike_beach {
+    width: 100%;
+    height: 400px;
+}
+
+/* sales body */
+.sal_body{
+    background-color: grey;
+}
+
+/* sales Header */
+#sal_welcome {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5PX;
+}
+
+.sal_intro {
+    margin-bottom: 10px;
+}
+
+.sal_sales {
+    font-size: 2rem;
+    text-decoration: underline;
+    
+}
+
+/* Flex box for images */
+.sal_maincont {
+    display: flex;
+    flex-direction: column;
+    margin: auto; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Sales image and text */
+
+.sal_contbox {
+
+    position: relative;
+    max-width: 600px;
+    max-height: 350px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sal_salimg {
+    width: 600px;
+    height: 350px;
+}
+
+.sal_uls {
+    visibility: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    text-align: center;
+    padding-top: 10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.sal_uls li {
+    list-style: none;
+    
+}
+
+.sal_contbox:hover .sal_uls {
+    visibility: visible;
+    opacity: 1;
+}
+
+#sal_vid_intro {
+    font-size: large;
+    font-style: italic;
+    text-decoration: underline;
+    
+}
+
+#sal_video {
+    margin-top: 30px;
+    height: 350px;
+    width: 600px;
+}
+
+
+
+/* Service page navigation ul */
+#ser_nav_menu ul {  
+    list-style-type: none;
+    height: 75px;
+    width: 850px;
+    margin-top: 130px;
+    margin-left: calc((100% - 850px) /2);
+    align-self: center;
+}
+
+
+/* Service nav menu */
+#ser_nav_menu{
+    margin-top: -100px;
+}
+
+/*Service page Navigation menu list */
+#ser_nav_menu li {    
+    float: left;
+}
+
+/* Service page Navigation menu list */
+#ser_nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 150px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: steelblue;
+    color: whitesmoke;
+    font-weight: bold;
+    border-right: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+}
+
+#ser_nav_menu ul li a.current {
+    color: orange;
+    text-decoration: underline;
+}
+
+#ser_welcome {
+    text-align: center;
+}
+
+.ser_services {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.ser_intro {
+    margin-top: 30px;
+    font-size: 1.25rem;
+
+}
+
+/* Service Page Table */
+.ser_table {
+    border: 1px solid red;
+    width: 100%;
+   
+}
+
+.ser_figcap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.ser_head {
+    text-decoration: underline;
+    color: blue;
+    font-style: italic;
+    font-size: 1.25rem;
+    background-color: aquamarine;
+    
+}
+
+.ser_table th, td {
+    border: 1px solid blue;
+    text-align: center;
+    vertical-align: center;
+    width: 50%;
+}
+
+/* contact page */
+
+.con_body {
+    background-color: wheat;
+}
+
+#con_welcome {
+    margin-bottom: 40px;
+}
+
+.con_req {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.con_intro {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+#contact_form {
+    font-size: 1.24rem;
+    color: blue;
+}
+
+#contact_form {
+    text-align: center;
+}
+
+.con_inq_type, .con_bik_type {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.con_messgae {
+    width: 250px;
+    height: 75px;
+}
+
+.password {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#city, #zip, #email, #date {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Response nav menu */
+#resp_nav_menu{
+    margin-top: -100px;
+}
+
+/*Response page Navigation menu list */
+#resp_nav_menu li {    
+    float: left;
+}
+
+#resp_nav_menu ul {  
+    list-style-type: none;
+    height: 75px;
+    width: 850px;
+    margin-top: 130px;
+    margin-left: calc((100% - 850px) /2);
+    align-self: center;
+}
+
+/* Response page Navigation menu list */
+#resp_nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 150px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: steelblue;
+    color: whitesmoke;
+    font-weight: bold;
+    border-right: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+}
+
+.resp_ty {
+    font-size: 75px;
+    text-decoration: underline;
+    text-align: center;
+    color: blue;
+}
+
+/* media query less than 550px Width */
+@media only screen 
+    and (max-width: 550px)
+    {
+        #nav_menu, #ren_nav_menu, #sal_nav_menu, #ser_nav_menu, #con_nav_menu, #resp_nav_menu {
+            display: none;
+        }
+        
+        #mobile_menu{
+            display: block;
+        
+        }
+
+        #ind_div_contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .ind_welcome {
+        margin-top: 10%;
+        font-size: 1.75em;
+        }
+        
+        .ind_desc, #ind_div_bikes, .ind_siu {
+            font-size: 1.5em;
+            flex-direction: column;
+        }
+
+        .sal_sales {
+            margin-top: -200px;
+        }
+
+        #sal_div_contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #sal_img_top {
+            background-size: 100% 15%;
+        }
+
+        #sal_welcome {
+            margin-top: 230px;
+        }
+
+        .sal_contbox, .sal_salimg, .sal_uls, #sal_video {
+            width: 450px;
+            height: 250px;
+        }
+
+        .rental_h1 {
+            text-align: center;
+            font-size: 2.05em;
+        }
+        
+        #ren_div_main {
+            display: flex;
+            flex-direction: column;
+            font-size: large;
+        }
+
+        .rental_terms{
+            font-size: medium;
+        }
+
+        .sal_address {
+            margin-top: 70px;
+        }
+        /* Service Page Intro */
+        .ser_intro {
+            font-size: 1.75rem;
+        }
+
+        .ser_figcap {
+            font-size: 2.25rem;
+        }
+        
+        /* Service Page Table */
+        .table {
+            margin-inline-start: 10px;
+            margin-inline-end: 10px;
+        }
+        
+        .ser_head {
+            font-size: 1.75rem;
+        }
+
+        .ser_body {
+            font-size: 1.5rem;
+        }
+        
+        /* Contact Page */
+
+        .con_intro {
+            font-size: 1.5rem;
+        }
+
+        .con_bik_type {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contact_form {
+            display: flex;
+             flex-direction: column;
+            align-items: center;
+        }
+
+        #address, #state, #phone {
+            margin-bottom: 30px;
+        }
+
+        .con_inq_type, .con_bik_type {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        
+
+    }
+
+    
+
+
+/* media query less than 375px Width */
+@media only screen 
+    and (max-width: 375px)
+    {
+        #ind_div_contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        #sal_div_contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #nav_menu, #ren_nav_menu, #sal_nav_menu, #ser_nav_menu {
+            display: none;
+        }
+
+        #mobile_menu{
+            display: block;
+        
+        }
+
+        #sal_div_contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sal_sales {
+            margin-top: -140px;
+        }
+
+        .sal_uls {
+            padding-top: unset;
+        }
+
+        #sal_welcome {
+            margin-top: 230px;
+        }
+
+        .sal_contbox, .sal_salimg, .sal_uls, #sal_video {
+            width: 250px;
+            height: 150px;
+        }
+
+        .sal_uls li {
+            font-size: 10px;
+        }
+
+        .ind_welcome {
+        margin-top: 120%;
+        font-size: 1.75em;
+        }
+        
+        .ind_desc, #ind_div_bikes, .ind_siu {
+            font-size: 1.5em;
+        }
+
+        .rental_h1 {
+            text-align: center;
+            font-size: 2.05em;
+        }
+        
+        #ren_div_main {
+            display: flex;
+            flex-direction: column;
+            font-size: medium;
+        }
+
+        .rental_aside {
+            margin-top: 30%
+        }
+
+        .rental_terms {
+            font-size: medium;
+        }
+
+        .sal_address {
+            margin-top: 40px;
+        }
+
+        /* Service Page Intro */
+        .ser_intro {
+            font-size: 1.75rem;
+        }
+
+        .ser_figcap {
+            font-size: 2.25rem;
+        }
+        
+        /* Service Page Table */
+        .table {
+            margin-inline-start: 10px;
+            margin-inline-end: 10px;
+        }
+
+        .ser_table {
+            border: none;
+        }
+        
+        .ser_head {
+            font-size: 1.75rem;
+        }
+
+        .ser_body {
+            font-size: 1.5rem;
+        }
+
+         /* Contact Page */
+
+         .con_intro {
+             font-size: 1.75rem;
+         }
+
+         #contact_form {
+             font-size: 1.75rem;
+         }
+
+         .con_inq_type, .con_bik_type {
+            margin-left: 70px;
+            margin-right: 70px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+         }
+
+         /* Reponse Page */
+         .resp_ty {
+             font-size: 3.5rem;
+         }
+    }
+    

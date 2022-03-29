@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+        <!-- 
+*****************************************************************************
+Title: Davis Bicycle Shop Rental Page
+Use: To promote Davis Bicycle shop
+Author: Brian Davis
+School/Term: Southern Illinois University Carbondale, Spring 2022
+Developed: Feb 3, 2022
+Tested: Feb 6, 2022; Passed on Firefox, Chrome, and safari browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Davis Bicycle Shop Rental Page</title>
+        <meta name="keywords" content="Davis bicycle shop rentals, Davis bicycles rentals, family bicycle rentals, kids bicycles rentals,
+         adult bicycle rentals, family bike rentals, adult bike rentals, kids bike rentals">
+        <meta name="Author" content="Davis">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function() {
+                $('#ren_nav_menu') .slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+
+</head>
+<!--Body-->
+<body class="rental_body">
+        <!--navigation menu-->
+        <nav id="mobile_menu"></nav>
+        <div class="body">
+        <img class="ren_bike_beach" src="images/Bike_beach.jpg" alt="Bikes_on_beach" > 
+        <nav id="ren_nav_menu">
+                <ul>
+                        <li><a href="index.htm">Home</a></li>
+                        <li><a href="rentals.htm" class="current">Rentals</a></li>
+                        <li><a href="sales.htm">Sales</a></li>
+                        <li><a href="services.htm">Services</a></li>
+                        <li><a href="contact.htm" class="lastitem">Contact</a></li>
+                </ul>
+        </nav>
+<h1 class="rental_h1">Davis Bicycle Shop Rentals</h1> <!--list of rental bikes available-->
+<div id="ren_div_main">
+        <section class="rental_main">
+        <h2 class=rental_main_h2>Rental Bikes Availble</h2>
+        <p class="rent_main_p">We currently offer thes bikes and more for rental:</p>
+        <Ul>
+                <li class="rent_bike_list"><strong>Davis Adult Moutain Bike:</strong> Davis Adult Mountain Bike comes in 12 to 18 speeds
+                and will support riders from 5'0 to 6'5. </li>
+                <li class="rent_bike_list"><strong>Davis Kids Mountain Bike:</strong> Davis Kids Mountain Bike comes in 8 to 12 speeds
+                        and will support riders from 4'3 to 5'0.</li>
+                <li class="rent_bike_list"><strong>Davis Adult Street Bike:</strong> Davis Street Bikes are road ready and equiped to 
+                provide the smoothes rides. Tandem bikes are available with baby seat options.</li>
+                <li class="rent_bike_list"><strong>Davis Kids Street Bike:</strong> Davis Kids Street Bikes are loaded with saftey options
+                including training wheels.</li>
+        </Ul> 
+        </section>
+        <aside class="rental_aside"><h2>Rental Bike Pricing</h2> <!--list of rental prices-->
+                <ul>
+                        <li class="rental_prices"><strong>Davis Adult Moutain Bike:</strong> $89 Per Day</li>
+                        <li class="rental_prices"><strong>Davis Kids Moutain Bike:</strong> $59 Per Day</li>
+                        <li class="rental_prices"><strong>Davis Adult Street Bike:</strong> $69 Per Day</li>
+                        <li class="rental_prices"><strong>Davis Kids Street Bike:</strong> $39 Per Day</li>
+                        <li class="rental_prices"><strong>Davis Tandem Street Bike:</strong> $79 Per Day</li>
+                        <li class="rental_prices"><strong>Davis Padding Rental:</strong> $15 Per Day</li>
+                        <li class="rental_prices"><strong>Davis Helmet Rental:</strong> $10 Per Day</li>
+                        <li class="rental_prices"><strong>Davis Rental Insurance:</strong> $7 Per Day</li>
+                </ul>
+        
+        </aside>
+</div> 
+<p class="rental_terms">It is the responsibility of Renter to hold their own insurance policy to cover 
+        personal medical care in case of an accident, loss, and any third party liability that may
+         arise from the use of the Rental Bikes. All rentals are due back at the end of the day in the same
+        condition it was rented in.</p>
+</div>
+</body>
+</html>

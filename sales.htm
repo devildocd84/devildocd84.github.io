@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+        <!-- 
+*****************************************************************************
+Title: Davis Bicycle Shop
+Use: To promote Davis Bicycle shop
+Author: Brian Davis
+School/Term: Southern Illinois University, Spring 2022
+Developed: Feb 13, 2022
+Tested: Feb 13, 2022; Passed on Firefox, Chrome, and safari browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Sales</title>
+        <meta name="keywords" content="Davis bicycle shop Sales, Davis bicycles sales, family bicycle sales, kids bicycles sales,
+         adult bicycle sales, family bike sales, adult bike sales, kids bike sales">
+        <meta name="Author" content="Davis">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function() {
+                $('#sal_nav_menu') .slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+       <style id="sal_img_top">
+                body {
+                    background-image: url(images/Fam.jpg);
+                    background-repeat: no-repeat;
+                    background-size: 100% 200px;
+                }
+            </style>
+</head>
+<body class="sal_body">
+        <nav id="mobile_menu"></nav>
+        <div class="body">
+        <!--page title Company name-->
+        <h1 class="sal_title">Davis Bicycle Shop</h1>
+        <!--Contact Info-->
+        <div id="sal_div_contact">
+            <!--Location-->
+            <h2 class="sal_address">8100 Trail Blazer Rd<br>Alton IL, 62002</h2>
+            <!--Hours of Ops-->
+            <h3 class="sal_hours">Open Daily: 9:00am - 7:00pm</h3>
+        </div>
+        <!--main image-->
+            <!--Main Navigation menu-->
+            <nav id="sal_nav_menu">
+                <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="rentals.htm">Rentals</a></li>
+                    <li><a href="sales.htm" class="current">Sales</a></li>
+                    <li><a href="services.htm">Services</a></li>
+                    <li><a href="contact.htm" class="lastime">Contact Us</a></li>
+                </ul>
+            </nav>
+</div>
+<div id="sal_welcome">
+        <p class="sal_sales"><strong>BICYCLE SALES</strong></p>
+        <hr class="ind_hr">
+        <p class="sal_intro">Davis Bicycle Shop offers quality made bicycles for affordable prices. <br> Check out or great models below to get more information.
+        <br> Come in to get test ride and get
+        </p>
+</div>
+<div class="sal_maincont">
+<div class="sal_contbox">
+        <img class="sal_salimg" src="images/city_bikes.jpg" alt="Bikes parked outside of the city">
+        <div class="sal_uls">
+                <ul>
+                        <li>
+                                Sizes from Youth to Large Adult
+                        </li>
+                        <br>
+                        <li>
+                                Best for Commuting and Leisure
+                        </li>
+                        <br>
+                        <li>
+                                Hybrid Options for Speed and Comfort
+                        </li>
+                        <br>
+                        <li>
+                                Accessories including Luggage Racks
+                        </li>
+                        <br>
+                        <li>
+                                Models Starting at $119.99 
+                        </li>
+                </ul>
+        </div>
+</div>
+<div class="sal_contbox">
+        <img class="sal_salimg"  src="images/road_bike.jpg" alt="Road Bikes Exercising">
+        <div class="sal_uls">
+                <ul>
+                        <li>
+                                Great for Exercise and commuting 
+                        </li>
+                        <br>
+                        <li>
+                                Sizes from Youth to Large Adult
+                        </li>
+                        <br>
+                        <li>
+                                Novice to Advanced Model Options
+                        </li>
+                        <br>
+                        <li>
+                                Accessories including Training Wheels
+                        </li>
+                        <br>
+                        <li>
+                                Models Starting at $149.99 
+                        </li>
+                </ul>
+        </div>
+</div>
+<div class="sal_contbox">
+        <img class="sal_salimg"  src="images/moutain_bike.jpg" alt="Mountian Biker">
+        <div class="sal_uls">
+                <ul>
+                        <li>
+                                Sizes from Youth to Large Adult
+                        </li>
+                        <br>
+                        <li>
+                                Novice to Advanced Model Options
+                        </li>
+                        <br>
+                        <li>
+                                Models with Adjustable Suspensions
+                        </li>
+                        <br>
+                        <li>
+                                Drivetrain with Speeds up to 18 Speed
+                        </li>
+                        <br>
+                        <li>
+                                Models Starting at $199.99 
+                        </li>
+
+                </ul>
+                </div>
+</div>
+<div class="sal_contbox">
+        <img class="sal_salimg"  src="images/tandem_bike.jpg" alt="Red Classic Tandem Bike">
+        <div class="sal_uls">
+                <ul>
+                        <li>
+                                Configurations for up to Three Persons       
+                        </li>
+                        <br>
+                        <li>
+                                Options for Child Trailer and Child Seats
+                        </li>
+                        <br>
+                        <li>
+                                Drivetrain Options for Leisure and Exercise
+                        </li>
+                        <br>
+                        <li>
+                                Models Starting at $189.99 
+                        </li>
+                </ul>
+        </div>
+</div>
+<p id="sal_vid_intro"><strong>Our customers enjoying our bikes!</strong></p>
+<!--video for sales page / autoplay blocked in chrome-->
+<video id="sal_video" controls autoplay loop>
+        <source src="media/Cycling.mp4" type="video/mp4">
+</video>
+</div>
+
+</body>
+</html>
